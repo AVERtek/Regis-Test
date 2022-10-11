@@ -1,2 +1,1 @@
-# Regis-Test
-Test for XR-EDGE Regis 
+# SRG Lincoln SM
