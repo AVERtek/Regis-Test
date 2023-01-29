@@ -237,7 +237,12 @@ top: 2px; right: 0; height: 40px; width: auto; ">
   /* This keeps child nodes hidden while the element loads */
   :not(:defined) > * {
     display: none;
-  }                        
+  } 
+    model-viewer {
+    background-color: #ffffff;
+    overflow-x: hidden;
+    --poster-color: #ffffff;
+    }
 
   #ar-button {
     background-image: url(../../assets/ic_view_in_ar_new_googblue_48dp.png);
