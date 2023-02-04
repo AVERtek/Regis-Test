@@ -216,6 +216,7 @@ top: 2px; right: 0; height: 40px; width: auto; ">
   window.switchSrc = (element, name) => {
     const base = "Models/" + name;
     modelViewer.src = base + '.glb';
+    modelViewer.dismissPoster());
     
     const slides = document.querySelectorAll(".slide");
     slides.forEach((element) => {element.classList.remove("selected");});
