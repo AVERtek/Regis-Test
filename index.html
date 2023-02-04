@@ -183,7 +183,9 @@ autoplay camera-orbit="0deg 90deg 90%" alt="A 3D model carousel" style="width: 1
 top: 2px; right: 0; height: 40px; width: auto; ">
    👆 <b style="color:#FFFFFF;"><strong>AR CLICK HERE</strong></b></button>
 
- 
+ <script>
+  modelViewer.addEventListener('click', () => modelViewer.dismissPoster());
+ <Script/>
 
   <div class="slider">
     <div class="slides">
@@ -223,10 +225,10 @@ top: 2px; right: 0; height: 40px; width: auto; ">
     element.classList.add("selected");
   };
 
-  <!-- document.querySelector(".slider").addEventListener('beforexrselect', (ev) => {
+   document.querySelector(".slider").addEventListener('beforexrselect', (ev) => {
     // Keep slider interactions from affecting the XR scene.
     ev.preventDefault();
-  }); -->
+  }); 
 </script>
 
 <style>
