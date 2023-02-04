@@ -230,6 +230,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <style>
  
+   /* This keeps child nodes hidden while the element loads */
+  :not(:defined) > * {
+    display: none;
+  }
  
    model-viewer {
     background-color: #ffffff;
@@ -280,6 +284,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     to   { transform: translateX(-100px); }
   }
 
+ model-viewer > #ar-prompt {
+    position: absolute;
+    left: 50%;
+    bottom: 175px;
+    animation: elongate 2s infinite ease-in-out alternate;
+    display: none;
+  }
+
+  model-viewer[ar-status="session-started"] > #ar-prompt {
+    display: block;
+  }
+ 
+   model-viewer[ar-tracking="not-tracking"] > #ar-failure {
+    display: block;
+  }
  
   .slider {
     width: 90%;
