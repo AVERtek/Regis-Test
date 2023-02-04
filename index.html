@@ -134,6 +134,7 @@ var getOutboundLink = function(url) {
   border: 2px solid rgb(255, 255, 255);
   padding: 10px;
   margin: 0 0 1em 0;
+  z-index: 8;
 }
 }
   .stack-top{
@@ -176,17 +177,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
      </div>
 
 <div class="card"> 
+ 
+   <div class="card1"> 
+  <model-viewer src="Models/regis_speaking_final_headear_2___1667346499397.glb?sound=Sound/REGIS_4_final.wav"
+   shadow-intensity="1" camera-controls interaction-prompt="none"
+  autoplay camera-orbit="0deg 90deg 75%" alt="A 3D model carousel" style="width: 100%; height: 480px; position: static; ">
+   div class="card"> 
   <model-viewer src="Models/regis_standing_standing_final_5___1666648558541.glb?sound=Sound/Dog_Bark_Panting_13.242 sec.wav" 
  shadow-intensity="1" ar ar-modes="webxr scene-viewer quick-look"
 autoplay camera-orbit="0deg 90deg 90%" alt="A 3D model carousel" style="width: 100%; height: 480px; ">
   <button slot="ar-button" style="z-index: 9; background-color: #0081ae; border-radius: 4px; border: #000000; position: absolute; 
 top: 2px; right: 0; height: 40px; width: auto; ">
    👆 <b style="color:#FFFFFF;"><strong>AR CLICK HERE</strong></b></button>
-   
-   <div class="card1"> 
-  <model-viewer src="Models/regis_speaking_final_headear_2___1667346499397.glb?sound=Sound/REGIS_4_final.wav"
-   shadow-intensity="1" camera-controls interaction-prompt="none"
-  autoplay camera-orbit="0deg 90deg 75%" alt="A 3D model carousel" style="width: 100%; height: 480px; position: static; ">
 
   <div class="slider">
     <div class="slides">
@@ -201,8 +203,8 @@ top: 2px; right: 0; height: 40px; width: auto; ">
      </button><button class="slide" onclick="switchSrc(this, 'regis_catching_scalebone_final_1___1666908892991')" style="background-image:url('images/Button Treat.png');">
    </button></div>
    </div>
-
   
+   
    </model-viewer>
      </div>   
   </model-viewer>
